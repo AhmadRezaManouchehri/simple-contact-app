@@ -1,0 +1,11 @@
+@import "../../../../../../partials/flex";
+
+.header {
+    @include flex(space-between);
+
+    width: 220px;
+
+    > div {
+        cursor: pointer;
+    }
+}

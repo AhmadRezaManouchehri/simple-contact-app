@@ -1,0 +1,30 @@
+@import "../../../../partials/flex";
+
+.Account {
+    @include flex(space-between);
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    height: 70px;
+
+    > div {
+        cursor: pointer;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    > p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-style: italic;
+        margin-right: auto;
+        overflow: hidden;
+        font-weight: 600;
+        font-size: 16px;
+        width: 140px;
+    }
+}

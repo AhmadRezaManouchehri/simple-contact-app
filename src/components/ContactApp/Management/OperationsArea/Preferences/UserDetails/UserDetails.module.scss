@@ -1,0 +1,33 @@
+@import "../../../../../../partials/flex";
+
+.userDetails {
+    @include flex(space-between) {
+        flex-direction: column;
+    }
+
+    border-radius: 10px;
+    height: 282px;
+    width: 220px;
+
+    .changeFullName,
+    .changePassword,
+    .logout,
+    .deleteAccount {
+        @include flex(space-between);
+
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 0 20px 0 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 50px;
+        width: 220px;
+
+        > p {
+            font-style: italic;
+            margin-right: auto;
+            margin-left: 10px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+}

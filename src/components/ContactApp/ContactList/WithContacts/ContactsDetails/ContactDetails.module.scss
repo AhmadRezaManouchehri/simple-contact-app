@@ -1,0 +1,18 @@
+@import "../../../../../partials/flex";
+
+.contactDetails {
+    @include flex;
+
+    height: 30px;
+
+    > div {
+        margin-right: 10px;
+    }
+
+    > p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 140px;
+    }
+}

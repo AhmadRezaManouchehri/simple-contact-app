@@ -1,0 +1,18 @@
+@import "../../../../partials/flex";
+
+.operations {
+    @include flex(space-between);
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: auto;
+    padding: 20px;
+    height: 70px;
+    width: 260px;
+
+    > div {
+        margin-right: 0;
+        cursor: pointer;
+    }
+}

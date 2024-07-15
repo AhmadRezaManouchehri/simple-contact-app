@@ -1,0 +1,11 @@
+@import "../../../../../../partials/flex";
+
+.resetUserDetails {
+    @include flex(space-between) {
+        flex-direction: column;
+    }
+
+    border-radius: 10px;
+    height: 282px;
+    width: 220px;
+}

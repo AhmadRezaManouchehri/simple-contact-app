@@ -1,0 +1,31 @@
+.iconWrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    z-index: 0;
+
+    > div,
+    > svg {
+        position: absolute;
+    }
+
+    div {
+        border-radius: 15px;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        z-index: 2;
+    }
+
+    svg {
+        left: calc(50% - 9px);
+        top: calc(50% - 9px);
+        z-index: 1;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}

@@ -1,0 +1,92 @@
+@import "../../../../../partials/flex";
+
+.edit {
+    @include flex(space-between, flex-start) {
+        flex-direction: column;
+    }
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 520px;
+    padding: 20px;
+    width: 260px;
+
+    > input {
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: ease-in 100ms border;
+        padding: 0 10px 0 10px;
+        margin: auto 0 20px 0;
+        border-radius: 4px;
+        font-size: 16px;
+        width: 220px;
+        height: 40px;
+        border: none;
+
+        &::placeholder {
+            font-style: italic;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        &:focus {
+            border: 3px solid black;
+            outline: none;
+        }
+    }
+
+    .newData {
+        @include flex(space-between) {
+            flex-direction: column;
+        }
+
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 20px;
+        height: 250px;
+        width: 220px;
+
+        > input {
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: ease-in 100ms border;
+            padding: 0 10px 0 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 180px;
+            height: 40px;
+            border: none;
+
+            &::placeholder {
+                font-style: italic;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            &:focus {
+                border: 3px solid black;
+                outline: none;
+            }
+        }
+    }
+
+    .editBtn {
+        background-color: rgba(255, 255, 255, 0.2);
+        align-self: flex-end;
+        border-radius: 5px;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        width: 100px;
+        height: 30px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

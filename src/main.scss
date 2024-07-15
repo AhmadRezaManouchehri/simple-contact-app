@@ -1,0 +1,26 @@
+@import "/Fonts/Roboto/robotoCondensedFontFaces.css";
+@import "./partials/flex";
+
+* {
+    font-family: "Roboto Condensed";
+    box-sizing: border-box;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("/Image/wallpaper.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    #root {
+        @include flex;
+
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+}
